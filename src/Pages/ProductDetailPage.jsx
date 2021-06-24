@@ -1,3 +1,4 @@
+import ProductDetail from '../components/ProductDetail';
 const ProductDetailPage = () => {
   return (
     <main>

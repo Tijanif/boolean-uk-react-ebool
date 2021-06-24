@@ -4,6 +4,7 @@ import CategoriesPage from './Pages/CategoriesPage';
 import BasketPage from './Pages/BasketPage';
 import ProductsPages from './Pages/ProductsPage';
 import PageNotFound from './Pages/PageNotFount';
+import ProductDetailPage from './Pages/ProductDetailPage';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path='/basket' exact>
               <BasketPage />
+            </Route>
+            <Route path='/products/:categoryId' exact>
+              <ProductDetailPage />
             </Route>
             <Route>
               <PageNotFound />

@@ -6,7 +6,10 @@ const ProductDetail = () => {
           src='https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'
           alt='Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops'
         />
-        <div class='product-detail__side' style='border-color: var(--yellow);'>
+        <div
+          class='product-detail__side'
+          style={{ ['border-color']: `var(--yellow);` }}
+        >
           <h3></h3>
           <h2>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h2>
           <p>
