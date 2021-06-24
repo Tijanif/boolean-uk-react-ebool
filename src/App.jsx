@@ -1,8 +1,10 @@
 import Header from './components/Header';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import CategoriesPage from './Pages/CategoriesPage';
 import BasketPage from './Pages/BasketPage';
 import ProductsPages from './Pages/ProductsPage';
+import PageNotFound from './Pages/PageNotFount';
+import Categories from './components/Categories';
 
 function App() {
   return (
@@ -11,19 +13,20 @@ function App() {
 
       <main>
         {
-          <Router>
-            <Switch>
-              <Route path='/'>
-                <ProductsPages />
-              </Route>
-              <Route path='/Categories'>
-                <CategoriesPage />
-              </Route>
-              <Route path='/Basket'>
-                <BasketPage />
-              </Route>
-            </Switch>
-          </Router>
+          <Switch>
+            <Route path='/' exact>
+              <ProductsPages />
+            </Route>
+            <Route path='/Categories' exact>
+              <CategoriesPage />
+            </Route>
+            <Route path='/Basket' exact>
+              <BasketPage />
+            </Route>
+            <Route>
+              <PageNotFound />
+            </Route>
+          </Switch>
         }
       </main>
     </>
