@@ -20,6 +20,9 @@ function App() {
             <Route path='/Categories' exact>
               <CategoriesPage />
             </Route>
+            <Route path='/Categories/:categoryId' exact>
+              <ProductsPages />
+            </Route>
             <Route path='/Basket' exact>
               <BasketPage />
             </Route>
