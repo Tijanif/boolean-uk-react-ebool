@@ -18,11 +18,11 @@ export default function Header() {
             <Link to='/'>Products</Link>
           </li>
           <li>
-            <Link to='/Categories'>Categories</Link>
+            <Link to='/categories'>Categories</Link>
           </li>
           <li>
             {/* Create here a link to this page */}
-            <Link to='/Basket'>Basket</Link>
+            <Link to='/basket'>Basket</Link>
           </li>
         </ul>
       </nav>

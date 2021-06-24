@@ -21,9 +21,9 @@ const Categories = () => {
       <ul className='categories-container__list'>
         {categories.map((category, index) => {
           return (
-            <li Key={`${index}-${category}`}>
+            <li key={`${index}-${category}`}>
               <Link
-                Key={index}
+                key={index}
                 style={{ ['--border-colour']: `var(--${randColour()})` }}
                 to={`/categories/${category.id}`}
               >
