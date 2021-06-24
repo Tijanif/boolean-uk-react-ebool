@@ -4,7 +4,6 @@ import CategoriesPage from './Pages/CategoriesPage';
 import BasketPage from './Pages/BasketPage';
 import ProductsPages from './Pages/ProductsPage';
 import PageNotFound from './Pages/PageNotFount';
-import Categories from './components/Categories';
 
 function App() {
   return (

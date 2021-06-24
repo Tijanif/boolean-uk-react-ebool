@@ -15,12 +15,10 @@ const Categories = () => {
       .then((categories) => setCategories(categories));
   }, []);
 
-  console.log(categories);
-
   const { categoryId } = useParams();
   return (
-    <section class='categories-container main-wrapper'>
-      <ul class='categories-container__list'>
+    <section className='categories-container main-wrapper'>
+      <ul className='categories-container__list'>
         {categories.map((category, index) => {
           return (
             <li Key={`${index}-${category}`}>
