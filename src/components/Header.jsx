@@ -15,7 +15,7 @@ export default function Header() {
       <nav className='header__nav'>
         <ul>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to='/'>Products</Link>
           </li>
           <li>
             <Link to='/Categories'>Categories</Link>
