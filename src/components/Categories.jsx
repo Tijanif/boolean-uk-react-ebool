@@ -1,4 +1,3 @@
-import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -14,8 +13,6 @@ const Categories = () => {
       .then((response) => response.json())
       .then((categories) => setCategories(categories));
   }, []);
-
-  const { categoryId } = useParams();
   return (
     <section className='categories-container main-wrapper'>
       <ul className='categories-container__list'>

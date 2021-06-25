@@ -1,24 +1,21 @@
-const ProductDetail = () => {
+const ProductDetail = ({ product, addItemToBasket }) => {
+  const { title, image, price, description } = product;
   return (
     <>
       <section class='product-detail main-wrapper'>
-        <img
-          src='https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'
-          alt='Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops'
-        />
+        <img src={image} alt={title} />
         <div
           class='product-detail__side'
-          style={{ ['border-color']: `var(--yellow);` }}
+          style={{ borderColor: 'var(--yellow)' }}
         >
           <h3></h3>
-          <h2>Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h2>
-          <p>
-            Your perfect pack for everyday use and walks in the forest. Stash
-            your laptop (up to 15 inches) in the padded sleeve, your everyday
-          </p>
-          <p>£109.95</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <p>£{price}</p>
           {/* <!-- Once you click in this button, the user should be redirected to the Basket page --> */}
-          <button>Add to basket</button>
+          <button onClick={() => addItemToBasket(product)}>
+            Add to basket
+          </button>
         </div>
       </section>
     </>

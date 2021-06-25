@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({ productIfno }) => {
-  const { title, categoryId, image } = productIfno;
+  const { title, image, id } = productIfno;
 
   return (
-    <li key={categoryId} onClick={`/products/categoryId`}>
-      <Link to={`/products/${categoryId}`}>
+    <li key={id}>
+      <Link to={`/products/${id}`}>
         <article className='product-item'>
           <img src={image} alt={title} />
           <h3>{title}</h3>
