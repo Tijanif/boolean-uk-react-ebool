@@ -23,8 +23,7 @@ const Categories = () => {
           return (
             <li key={`${index}-${category}`}>
               <Link
-                key={index}
-                style={{ ['--border-colour']: `var(--${randColour()})` }}
+                style={{ ['--random-colour']: `var(--${randColour()})` }}
                 to={`/categories/${category.id}`}
               >
                 {category.name}
