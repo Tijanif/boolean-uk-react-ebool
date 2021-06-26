@@ -8,7 +8,6 @@ const BasketPage = ({ basket }) => {
           <BasketItem item={item} />
         ))}
       </ul>
-      {/* <!-- Basket total is calculated using each item's total from above --> */}
       <h3>Your total: £109.95</h3>
     </section>
   );

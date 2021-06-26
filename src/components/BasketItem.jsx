@@ -17,7 +17,6 @@ const BasketItem = ({ item }) => {
             ))}
           </select>
         </p>
-        {/* <!-- The item total is calculated using the Qty selected value --> */}
         <p>Item total: £{(quantity * price).toFixed(2)}</p>
       </article>
     </li>

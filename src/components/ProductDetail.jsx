@@ -12,7 +12,6 @@ const ProductDetail = ({ product, addItemToBasket }) => {
           <h2>{title}</h2>
           <p>{description}</p>
           <p>£{price}</p>
-          {/* <!-- Once you click in this button, the user should be redirected to the Basket page --> */}
           <button onClick={() => addItemToBasket(product)}>
             Add to basket
           </button>
